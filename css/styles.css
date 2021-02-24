@@ -28,7 +28,7 @@ body {
   font-family: Roboto, sans-serif;
   font-style: normal;
 
-  width: 1600px;
+  min-width: 1600px;
 }
 
 ul {
@@ -460,6 +460,7 @@ footer {
 /* footer */
 
 .container.footer {
+  align-items: baseline;
   display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -508,10 +509,11 @@ footer {
   color: var(--color-blue);
 }
 
+/* join-us */
+
 .join-us-container {
-  width: 206px;
   margin-left: 70px;
-  margin-top: 12px;
+  /* margin-top: 12px; */
 }
 
 .join-us-title {
@@ -541,6 +543,10 @@ footer {
   color: var(--color-white);
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+}
+
+.join-us-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .join-us-link:hover,
